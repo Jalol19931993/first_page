@@ -1,0 +1,74 @@
+@charset"UTF-8";
+*{
+    margin:0 ;
+    padding: 0;
+
+}
+body {
+    background: blueviolet;
+    margin: 0 auto;
+}
+main section{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    background: whitesmoke;
+    transition: 1s;
+}
+section:nth-child(1){
+    background: url(/rim.jpg);
+    background-size: cover;
+}
+section:nth-child(2){
+    background: url(/moskva.jpg);
+    background-size: cover;
+}
+section:nth-child(3){
+    background: url(/madrid.jpg);
+    background-size: cover;
+}
+section:nth-child(4){
+    background: url(/parij.jpg);
+    background-size: cover;
+}
+section:nth-child(5){
+    background: url(/london.jpg);
+    background-size: cover;
+}
+section:nth-child(6){
+    background: url(/berlin.jpg);
+    background-size: cover;
+}
+main:hover section{
+    filter: blur(7px);
+}
+main section:hover{
+    filter: none;
+}
+nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(54, 43, 94);
+}
+nav a{
+    position: relative;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 1.5;
+    text-transform: uppercase;
+    display: inline-block;
+    opacity: 0.7;
+    transition: 0.3s;
+    
+}
+nav a:hover{
+    opacity: 1;
+    background-color: rgb(156, 180, 21);
+    color:black;
+}
+nav:hover{
+    background-color: darkgreen;
+}
